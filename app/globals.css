@@ -1,0 +1,60 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-wrapper{
+    transition-timing-function: linear !important;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.rotating {
+  height: 140px;
+  width: 120px;
+  z-index: 50;
+  position: absolute;
+  margin-left: 1230px;
+  margin-top: 30px;
+  animation: rotate 8s linear infinite;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* .glass-card {
+    box-shadow: 0 8px 32px 0 rgba(0, 255, 128, 0.2);
+  }*/
+
+  @keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); } /* bounce height */
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
