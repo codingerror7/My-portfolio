@@ -29,7 +29,7 @@ const Page2 = () => {
   {/* Image */}
   <div className="relative">
     <img
-      src="/public/myimage.jpg"
+      src="/myimage.jpg"
       alt="Sujal"
       className="w-full max-w-[420px] lg:w-[20vw] h-auto rounded-3xl shadow-[0_20px_80px_rgba(0,0,0,0.7)]"
     />
@@ -107,4 +107,5 @@ const Page2 = () => {
 }
 
 export default Page2
+
 
