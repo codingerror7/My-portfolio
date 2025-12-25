@@ -31,11 +31,9 @@ const Page2 = () => {
     <img
       src="./myimage.jpg"
       alt="Sujal"
-      className="h-[600px] w-[1200px] object-cover rounded-3xl 
-      border border-white/20 shadow-[0_20px_80px_rgba(0,0,0,0.7)]"
+      className="w-full max-w-[420px] lg:w-[20vw] h-auto rounded-3xl shadow-[0_20px_80px_rgba(0,0,0,0.7)]"
     />
-    <div className="absolute inset-0 rounded-3xl 
-      bg-gradient-to-t from-black/60 to-transparent" />
+    <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/60 to-transparent" />
   </div>
 
   {/* Content */}
