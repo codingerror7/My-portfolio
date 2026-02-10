@@ -7,15 +7,27 @@ import Projects from './Projects'
 const Page4 = () => {
   return (
     <>
-    <div id='Page4' className='min-h-[190vh] width-[100vw] overflow-hidden
-    bg-black font-[gilroy]'>
-      <div className='w-[80vw] mx-auto flex justify-around'>
-        <div className='w-[45%] h-[70%] mt-40'>
-          <h1 className='text-center font-[gilroy] uppercase font-extrabold text-6xl text-white'>MY CREATIONS IN CODE - SEE MY <span className='text-center font-[gilroy] uppercase font-extrabold text-6xl text-green-600'>PROJECTS</span></h1>
-          <p className='text-center text-2xl font-[gilroy] text-white font-medium mt-3'>Building modern web experiences that are both beautiful and meaningful</p>
+    <div id='Page4' className='min-h-screen w-full overflow-hidden bg-black font-[gilroy]'>
+      <div className='max-w-7xl
+      mx-auto
+      px-4 sm:px-6
+      flex flex-col lg:flex-row
+      items-center
+      justify-between
+      gap-10
+      pt-10 lg:pt-32'>
+        <div className='w-full lg:w-1/2 text-center lg:text-left'>
+          <h1 className='uppercase font-extrabold
+          text-xl lg:text-3xl sm:text-4xl lg:text-6xl
+          text-white
+          leading-tight'>MY CREATIONS IN CODE - SEE MY <span className='text-center font-[gilroy] uppercase font-extrabold text-3xl lg:text-6xl text-green-600'>PROJECTS</span></h1>
+          <p className='text-base sm:text-lg lg:text-2xl
+          text-white
+          font-medium
+          mt-4'>Building modern web experiences that are both beautiful and meaningful</p>
         </div>
         <div>
-          <Lottie 
+          <Lottie className="w-[180px] sm:w-[340px] lg:w-[500px]"
         animationData={Skills} 
         loop={true} 
         style={{ width: 450, height: 550 }}
