@@ -15,12 +15,12 @@ const Page4 = () => {
       items-center
       justify-between
       gap-10
-      pt-10 lg:pt-32'>
+      pt-20 lg:pt-32'>
         <div className='w-full lg:w-1/2 text-center lg:text-left'>
           <h1 className='uppercase font-extrabold
-          text-xl lg:text-3xl sm:text-4xl lg:text-6xl
+          text-xl sm:text-4xl lg:text-4xl
           text-white
-          leading-tight'>MY CREATIONS IN CODE - SEE MY <span className='text-center font-[gilroy] uppercase font-extrabold text-3xl lg:text-6xl text-green-600'>PROJECTS</span></h1>
+          leading-tight'>MY CREATIONS IN CODE - SEE MY <span className='text-center font-[gilroy] uppercase font-extrabold text-2xl lg:text-5xl text-green-600'>PROJECTS</span></h1>
           <p className='text-base sm:text-lg lg:text-2xl
           text-white
           font-medium
