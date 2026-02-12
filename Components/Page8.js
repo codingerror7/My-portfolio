@@ -15,27 +15,30 @@ import Hi from '../public/Hi.json'
 const Page8 = () => {
   return (
     <>
-    <div id='Page8' className='h-[170vh] width-[100vw] overflow-hidden
-    bg-black font-[gilroy]'>
+    <div id='Page8' className='min-h-screen w-full overflow-hidden bg-black font-[gilroy]'>
 
          <section className="relative bg-black min-h-screen flex items-center justify-center overflow-hidden px-6">
 
       {/* Blue Glow Background */}
-      <div className="absolute w-[520px] h-[350px] bg-blue-500/25 blur-[150px] rounded-full" />
+      <div className="absolute w-[280px] sm:w-[420px] h-[220px] sm:h-[350px]
+  bg-blue-500/25 blur-[120px] sm:blur-[150px] rounded-full"/>
 
       <div className="relative z-10 max-w-5xl w-full text-center">
 
         {/* Heading */}
-        <h1 className="font-[gilroy] text-5xl font-extrabold text-white mb-4 tracking-tight">
+        <h1 className="font-[gilroy] text-3xl sm:text-4xl md:text-5xl
+  font-extrabold text-white mb-4 tracking-tight">
           Let’s Connect
         </h1>
-        <p className="text-gray-400 mb-16 max-w-xl mx-auto">
+        <p className="text-gray-400 mb-12 sm:mb-16
+  max-w-xl mx-auto text-sm sm:text-base">
           Open to collaborations, freelance opportunities, and meaningful conversations.
           Let’s build something impactful together.
         </p>
 
         {/* Contact Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5
+  gap-6 sm:gap-8 mb-12 sm:mb-16">
 
           {/* LinkedIn */}
           <a
@@ -115,11 +118,13 @@ const Page8 = () => {
         <a
           href="/Sujal_Saraswat_Resume.pdf"
           download
-          className="inline-flex items-center gap-3 px-10 py-4 rounded-full
-                     bg-blue-500 text-white font-semibold text-lg
-                     hover:bg-blue-600 transition
-                     shadow-[0_0_25px_rgba(59,130,246,0.7)]
-                     hover:shadow-[0_0_40px_rgba(59,130,246,0.9)]"
+          className="inline-flex items-center gap-3
+    px-7 sm:px-10 py-3 sm:py-4
+    rounded-full bg-blue-500 text-white
+    font-semibold text-base sm:text-lg
+    hover:bg-blue-600 transition
+    shadow-[0_0_25px_rgba(59,130,246,0.7)]
+    hover:shadow-[0_0_40px_rgba(59,130,246,0.9)]"
         >
           <Download className="w-6 h-6" />
           Download Resume
@@ -127,10 +132,9 @@ const Page8 = () => {
 
       </div>
     </section>
-    <Lottie className='mx-auto mt-[-18%]'
+    <Lottie className="w-full max-w-[500px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[1200px] mx-auto"
         animationData={Hi} 
         loop={true} 
-        style={{ width: 1000, height: 900 }}
       />
     </div>
     </>
