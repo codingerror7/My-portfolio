@@ -97,7 +97,7 @@ const Page6 = () => {
   rounded-xl
   backdrop-blur-md bg-black/40
   shadow-[0_0_18px_rgba(255,0,0,0.6)]'>
-    <p className="text-base sm:text-lg text-center">2024 - Microsoft azure Fundamnetals Certification</p></div>
+    <p className="text-base sm:text-lg text-center">2024 - Microsoft azure Fundamnetals Certification</p>
     </div>
     <p className="text-base sm:text-xl text-center mt-6">• Solved 500+ Coding questions on Codechef.</p>
     <div className='w-full sm:w-[80%] md:w-[60%]
@@ -120,10 +120,12 @@ const Page6 = () => {
         <p className="text-base sm:text-lg text-center">2024 - Skillsoft Java programming language Certification</p>
     </div>
     </div>
+    </div>
     </>
   )
 }
 
 export default Page6
+
 
 
