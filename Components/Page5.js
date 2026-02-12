@@ -7,8 +7,7 @@ import Books from '../public/Books.json'
 const Page5 = () => {
   return (
     <>
-    <div className='min-h-[190vh] width-[100vw] overflow-hidden
-    bg-black font-[gilroy]'>
+    <div className='hidden md:block lg:block min-h-screen w-full overflow-hidden bg-black font-[gilroy]'>
       <div className='w-[80vw] mx-auto flex justify-around mb-12'>
         <div>
           <Lottie 
