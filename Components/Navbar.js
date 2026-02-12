@@ -45,7 +45,7 @@ const Navbar = () => {
 
     {/* Resume Button */}
     <a
-      href="/Sujal_Saraswat_Resume.pdf"
+      href="/Sujal_resume.pdf"
       download
       className="flex items-center gap-2 px-2 py-2 lg:px-5 lg:py-2 mt-[-12] lg:mt-0
           rounded-full text-black font-semibold text-sm sm:text-base
@@ -65,3 +65,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
