@@ -116,7 +116,7 @@ const Page8 = () => {
 
         {/* Resume Button */}
         <a
-          href="/Sujal_Saraswat_Resume.pdf"
+          href="/Sujal_resume.pdf"
           download
           className="inline-flex items-center gap-3
     px-7 sm:px-10 py-3 sm:py-4
@@ -142,3 +142,4 @@ const Page8 = () => {
 }
 
 export default Page8
+
