@@ -78,7 +78,7 @@ const Page6 = () => {
         w-[500px] h-[400px]
         bg-blue-500/30
         rounded-full
-        blur-[120px] mt-20
+        blur-[120px] mt-20 z-0
       "
     />
     <div
@@ -86,10 +86,10 @@ const Page6 = () => {
         w-[500px] h-[400px]
         bg-blue-500/30
         rounded-full
-        blur-[120px] mt-20 right-10
+        blur-[120px] mt-20 right-10 z-0
       "
     />
-    <div className='w-full max-w-6xl mx-auto px-4 font-[gilroy] text-white'>
+    <div className='w-full max-w-6xl mx-auto px-4 font-[gilroy] text-white relative z-10'>
         <div className='w-full sm:w-[80%] md:w-[60%]
   mx-auto mt-10
   border border-white/40
@@ -125,4 +125,5 @@ const Page6 = () => {
 }
 
 export default Page6
+
 
