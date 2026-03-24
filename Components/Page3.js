@@ -93,15 +93,14 @@ const Page3 = () => {
     "Javascript",
     "React.js",
     "Next.js",
-    "React Native",   
+    "React Native", 
+    "React Query",  
     "TailwindCSS",
     "Bootstrap 5",
     "GSAP",
     "Material UI",
     "Figma",
     "Framer Motion",
-    "React Query",
-    "Chakra UI",
   ].map((skill, index) => (
     <div
       key={index}
