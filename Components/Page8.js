@@ -116,7 +116,7 @@ const Page8 = () => {
 
         {/* Resume Button */}
         <a
-          href="/Sujal_resume(1).pdf"
+          href="/Myresume.pdf"
           download
           className="inline-flex items-center gap-3
     px-7 sm:px-10 py-3 sm:py-4
