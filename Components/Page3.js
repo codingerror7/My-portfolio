@@ -193,7 +193,7 @@ const Page3 = () => {
     "AWS",
     "Git",
     "GitHub",
-    "Cloudflare",
+    "Linux",
     "Vercel",
     "Render",
     "VS Code",
