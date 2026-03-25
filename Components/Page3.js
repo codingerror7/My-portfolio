@@ -243,7 +243,6 @@ const Page3 = () => {
     "Computer Networks",
     "Data Structures",
     "Software Engineering",
-    "ADA",
     "Problem Solving",
     "Communication Skills",
     "Project Management",
