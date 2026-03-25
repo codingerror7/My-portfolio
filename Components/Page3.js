@@ -244,7 +244,7 @@ const Page3 = () => {
     "Data Structures",
     "Software Engineering",
     "Problem Solving",
-    "Communication Skills",
+    "Communication",
     "Project Management",
   ].map((skill, index) => (
     <div
