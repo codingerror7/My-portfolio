@@ -1,5 +1,7 @@
+
 import React from 'react'
 import Link from 'next/link'
+import { event } from '../lib/gtag';    
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const Navbar = () => {
@@ -45,8 +47,15 @@ const Navbar = () => {
 
     {/* Resume Button */}
     <a
-      href="/Myresume.pdf"
+      href="/sujal_saraswat_resume.pdf"
       download
+      onClick={() =>
+    event({
+      action: "resume_download",
+      category: "portfolio",
+      label: "navbar",
+    })
+  }
       className="flex items-center gap-2 px-2 py-2 lg:px-5 lg:py-2 mt-[-12] lg:mt-0
           rounded-full text-black font-semibold text-sm sm:text-base
           bg-gradient-to-r from-orange-400 to-amber-400
@@ -65,4 +74,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
