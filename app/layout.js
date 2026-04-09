@@ -1,5 +1,6 @@
 
 import "./globals.css";
+import Analytics from "../Components/Analytics";
 
 export const metadata = {
   title: "PORTFOLIO",
@@ -7,9 +8,22 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
+  return (  
+
     <html lang="en" className="overflow-x-hidden">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ9GNECQLV"></script>
+        <script dangerouslySetInnerHTML={{__html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZ9GNECQLV');
+        `}} />
+      </head>
       <body>
+        <Analytics /> 
         {children}
       </body>
     </html>
