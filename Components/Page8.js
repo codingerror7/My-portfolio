@@ -1,3 +1,4 @@
+
 "use client"
 import React from 'react'
 import {
@@ -10,6 +11,7 @@ import {
 } from "lucide-react";
 import Lottie from 'lottie-react';
 import Hi from '../public/Hi.json'
+import { event } from '../lib/gtag';
 
 
 const Page8 = () => {
@@ -59,6 +61,13 @@ const Page8 = () => {
           <a
             href="https://github.com/codingerror7"
             target="_blank"
+             onClick={() =>
+    event({
+      action: "contact_click",
+      category: "portfolio",
+      label: "footer",
+    })
+  }
             className="group p-7 rounded-3xl bg-black/40 border border-gray-500
                        hover:scale-105 transition duration-300
                        shadow-[0_0_16px_rgba(255,255,255,0.15)]
@@ -73,6 +82,14 @@ const Page8 = () => {
           {/* Email */}
           <a
             href="mailto:saraswatsujal@gmail.com"
+            onClick={() =>
+    event({
+      action: "contact_click",
+      category: "portfolio",
+      label: "footer",
+    })
+  }
+
             className="group p-7 rounded-3xl bg-black/40 border border-cyan-400
                        hover:scale-105 transition duration-300
                        shadow-[0_0_18px_rgba(34,211,238,0.4)]
@@ -116,8 +133,15 @@ const Page8 = () => {
 
         {/* Resume Button */}
         <a
-          href="/Myresume.pdf"
+          href="/sujal_saraswat_resume.pdf"
           download
+          onClick={() =>
+    event({
+      action: "resume_download",
+      category: "portfolio",
+      label: "navbar",
+    })
+  }
           className="inline-flex items-center gap-3
     px-7 sm:px-10 py-3 sm:py-4
     rounded-full bg-blue-500 text-white
@@ -141,5 +165,5 @@ const Page8 = () => {
   )
 }
 
-export default Page8
 
+export default Page8
