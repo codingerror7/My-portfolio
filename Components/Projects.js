@@ -1,6 +1,8 @@
+
 'use client'
 import { ExternalLink, Github } from "lucide-react";
 import react from "react";
+import { event } from '../lib/gtag';
 
 export default function Projects() {
   return (
@@ -52,11 +54,23 @@ export default function Projects() {
 
           {/* Actions */}
           <div className="flex gap-6">
-            <a href="https://shopzilla-app-4ray.onrender.com" target="_blank" className="flex items-center gap-2 text-blue-400 hover:text-blue-300 hover:cursor-pointer">
+            <a href="https://shopzilla-app-4ray.onrender.com" target="_blank" onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "tripnest",
+    })
+  } className="flex items-center gap-2 text-blue-400 hover:text-blue-300 hover:cursor-pointer">
               <ExternalLink className="w-5 h-5" />
               Live Demo
             </a>
-            <a href="https://github.com/codingerror7/shopzilla-app" target="_blank" className="flex items-center gap-2 text-gray-300 hover:text-white hover:cursor-pointer">
+            <a href="https://github.com/codingerror7/shopzilla-app" target="_blank" onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "tripnest",
+    })
+  } className="flex items-center gap-2 text-gray-300 hover:text-white hover:cursor-pointer">
               <Github className="w-5 h-5" />
               Source Code
             </a>
@@ -102,9 +116,17 @@ export default function Projects() {
   {/* Actions */}
   <div className="flex gap-6">
     <a
+      href="https://tripnest-4-gxzg.onrender.com"
       className="flex items-center gap-2 text-yellow-400 hover:text-yellow-300"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "tripnest",
+    })
+  }
     >
       <ExternalLink className="w-5 h-5" />
       Live Demo
@@ -114,6 +136,13 @@ export default function Projects() {
       className="flex items-center gap-2 text-gray-300 hover:text-white"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "Tripnest",
+    })
+  }
     >
       <Github className="w-5 h-5" />
       Source Code
@@ -167,6 +196,13 @@ export default function Projects() {
       className="flex items-center gap-2 text-gray-300 hover:text-white"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "tripnest",
+    })
+  }
     >
       <Github className="w-5 h-5" />
       Source Code
@@ -263,3 +299,4 @@ export default function Projects() {
     </section>
   );
 }
+
