@@ -49,6 +49,7 @@ Vercel
 
 
 📈 Analytics & Insights
+
 To better understand user engagement and optimize the site performance, I integrated Google Analytics 4 (GA4) into this portfolio. By tracking key metrics such as page views, user retention, and geographic distribution, I can make informed, data-driven decisions for future UI/UX enhancements. This integration demonstrates my interest in monitoring real-world application usage and maintaining a professional, production-ready web presence.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
