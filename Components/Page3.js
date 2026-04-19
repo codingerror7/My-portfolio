@@ -139,12 +139,12 @@ const Page3 = () => {
   "
 >
   {[
-    "MySQL",
     "MongoDB",
+    "Cloudinary",    
     "Express",
     "Node.js",
     "REST API",
-    "GraphQL",
+    "Socket.io",
     "Firebase",
     "JWT Auth",
     "Jest",
