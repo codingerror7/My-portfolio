@@ -39,7 +39,7 @@ export default function Projects() {
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-3 mb-10">
-            {["React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind"].map(
+            {["React", "Node.js", "Express", "MongoDB", "Cloudinary", "JWT", "Material UI"].map(
               (tech) => (
                 <span
                   key={tech}
@@ -76,6 +76,68 @@ export default function Projects() {
             </a>
           </div>
         </div>
+
+        <div className="
+          relative rounded-3xl p-12 mb-20
+          bg-gradient-to-br from-[#020617] to-black
+          border border-orange-500
+          shadow-[0_0_35px_rgba(249,115,22,0.45)]
+          hover:shadow-[0_0_55px_rgba(249,115,22,0.8)]
+          transition duration-300
+        ">
+
+          <span className="text-orange-500 text-sm uppercase tracking-widest">
+            Featured Project
+          </span>
+
+          <h3 className="text-4xl font-bold text-white mt-4 mb-6">
+            ShadowSafe AI - AI Powered safety and alert System
+          </h3>
+
+          <p className="text-gray-300 max-w-3xl leading-relaxed mb-8">
+            Engineered ShadowSafe AI, an AI-powered women’s safety platform enabling real-time emergency alerts, live location tracking, Law-based AI chatbot and intelligent threat detection to ensure faster response and enhanced user security.
+          </p>
+
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-3 mb-10">
+            {["React Native", "Gen AI", "Multer", "MongoDB", "OTP-based auth", "Cloudinary", "AI Chatbot"].map(
+              (tech) => (
+                <span
+                  key={tech}
+                  className="px-4 py-1 text-sm rounded-full
+                  border border-orange-500 text-orange-500 bg-black/40"
+                >
+                  {tech}
+                </span>
+              )
+            )}
+          </div>
+
+          {/* Actions */}
+          <div className="flex gap-6">
+            <a href="https://wa.me/919300446947" target="_blank" onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "ShadowSafe-ai",
+    })
+  } className="flex items-center gap-2 text-orange-500 hover:text-orange-500 hover:cursor-pointer">
+              <ExternalLink className="w-5 h-5" />
+              Request for Apk File
+            </a>
+            <a href="https://github.com/codingerror7/shadowSafe-ai" target="_blank" onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "ShadowSafe-ai",
+    })
+  } className="flex items-center gap-2 text-gray-300 hover:text-white hover:cursor-pointer">
+              <Github className="w-5 h-5" />
+              Source Code
+            </a>
+          </div>
+        </div>
+
         <div className="
   relative rounded-3xl p-12 mb-20
   bg-gradient-to-br from-[#1a1305] to-black
@@ -100,7 +162,7 @@ export default function Projects() {
 
   {/* Tech Stack */}
   <div className="flex flex-wrap gap-3 mb-10">
-    {["React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind"].map(
+    {["React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind CSS"].map(
       (tech) => (
         <span
           key={tech}
@@ -149,6 +211,67 @@ export default function Projects() {
     </a>
   </div>
 </div>
+
+<div className="
+  relative rounded-3xl p-12 mb-20
+  bg-gradient-to-br from-[#0b0b0b] to-black
+  border border-green-700
+  shadow-[0_0_35px_rgba(34,197,94,0.25)]
+hover:shadow-[0_0_55px_rgba(34,197,94,0.45)]
+  transition duration-300
+">
+
+  <span className="text-white/70 text-sm uppercase tracking-widest">
+    Work In Progress
+  </span>
+
+  <h3 className="text-4xl font-bold text-white mt-4 mb-6">
+    Cinesocial - Social platform for cinephiles.
+  </h3>
+
+  <p className="text-gray-300 max-w-3xl leading-relaxed mb-8">
+    Building CineSocial, a scalable social platform for movie enthusiasts featuring community-driven discussions, content sharing (posts, polls, scenarios), real-time chat, and AI-powered movie recommendations.
+  </p>
+
+  {/* Tech Stack */}
+  <div className="flex flex-wrap gap-3 mb-10">
+    {["Socket.io", "AI Integration", "Cloudinary", "Redis", "MongoDB", "Docker", "Next.js"].map(
+      (tech) => (
+        <span
+          key={tech}
+          className="px-4 py-1 text-sm rounded-full
+          border border-green-700 text-green-700 bg-black/40"
+        >
+          {tech}
+        </span>
+      )
+    )}
+  </div>
+
+  {/* Status & Actions */}
+  <div className="flex gap-6 items-center">
+    <span className="flex items-center gap-2 text-white/70 italic">
+      🚧 Actively under development
+    </span>
+
+    <a href="https://github.com/codingerror7/cinesocial"
+      className="flex items-center gap-2 text-gray-300 hover:text-white"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "tripnest",
+    })
+  }
+    >
+      <Github className="w-5 h-5" />
+      Source Code
+    </a>
+  </div>
+</div>
+
 <div className="
   relative rounded-3xl p-12 mb-20
   bg-gradient-to-br from-[#0b0b0b] to-black
