@@ -250,9 +250,16 @@ hover:shadow-[0_0_55px_rgba(34,197,94,0.45)]
 
   {/* Status & Actions */}
   <div className="flex gap-6 items-center">
-    <span className="flex items-center gap-2 text-white/70 italic">
-      🚧 Actively under development
-    </span>
+    <a href="https://cinesocial-app.onrender.com" target="_blank" onClick={() =>
+    event({
+      action: "project_click",
+      category: "portfolio",
+      label: "tripnest",
+    })
+  } className="flex items-center gap-2 text-blue-400 hover:text-blue-300 hover:cursor-pointer">
+              <ExternalLink className="w-5 h-5" />
+              Live Demo
+            </a>
 
     <a href="https://github.com/codingerror7/cinesocial"
       className="flex items-center gap-2 text-gray-300 hover:text-white"
