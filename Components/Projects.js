@@ -256,7 +256,7 @@ hover:shadow-[0_0_55px_rgba(34,197,94,0.45)]
       category: "portfolio",
       label: "tripnest",
     })
-  } className="flex items-center gap-2 text-blue-400 hover:text-blue-300 hover:cursor-pointer">
+  } className="flex items-center gap-2 text-green-400 hover:text-blue-300 hover:cursor-pointer">
               <ExternalLink className="w-5 h-5" />
               Live Demo
             </a>
