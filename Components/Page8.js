@@ -133,7 +133,7 @@ const Page8 = () => {
 
         {/* Resume Button */}
         <a
-          href="/sujal_saraswat_resume.pdf"
+          href="/sujal_resume.pdf"
           download
           onClick={() =>
     event({
